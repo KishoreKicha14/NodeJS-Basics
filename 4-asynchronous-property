@@ -1,0 +1,16 @@
+console.log('staring')
+setTimeout(()=>{console.log('0 seconds')},0)
+setTimeout(()=>{console.log('2 second')},2000)
+console.log('stopping')
+//*******************
+//output
+//starting
+//stopping
+//0 seconds
+//2 second
+//*******************
+//why the setTimeout() is printing the console.log() after few minutes
+//it is becuse of asynchronous property for node js specially used for non blocking I/O and event driven
+
+//why even the setTimeout() is waiting for 0 seconds it is printed after stopped?
+//explaination given in next file
